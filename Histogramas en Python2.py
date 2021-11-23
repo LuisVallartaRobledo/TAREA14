@@ -27,11 +27,11 @@ plt.savefig(f'{ruta_aplicacion}/Histograma2.jpg')
 import seaborn as sns
 plt.figure(2)
 sns.countplot(x=atletas['Velocidad'], palette = 'ocean')
-plt.savefig(f'{ruta_aplicacion}/Velocidades.jpg')
+plt.savefig(f'{ruta_aplicacion}/Velocidad.jpg')
 #Si queremos saber las velocidades en hombres y en mujeres
 plt.figure(3)
 grafico3 = sns.countplot(x = 'Genero', hue = 'Velocidad', palette = 'hot_r', data = atletas)
-grafico3.set(title = 'Velocidades por Género',
+grafico3.set(title = 'Velocidades por Género2',
        xlabel = 'Género', ylabel = 'Total')
 plt.title("Gráfico de Barras Genero")
 plt.savefig(f'{ruta_aplicacion}/Genero.jpg')

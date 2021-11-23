@@ -20,7 +20,7 @@ atletas.head()
 #Creamos el histograma de la variable Tiempo
 plt.figure(1)
 plt.hist(atletas['Tiempo'], 15, color="yellow", ec="black")
-plt.title("Histograma Tiempo2")
+plt.title("Histograma")
 
 plt.savefig(f'{ruta_aplicacion}/Histograma2.jpg')
 #Para conocer la frecuencia de una variable que es categórica
@@ -31,7 +31,7 @@ plt.savefig(f'{ruta_aplicacion}/Velocidad.jpg')
 #Si queremos saber las velocidades en hombres y en mujeres
 plt.figure(3)
 grafico3 = sns.countplot(x = 'Genero', hue = 'Velocidad', palette = 'hot_r', data = atletas)
-grafico3.set(title = 'Velocidades por Género2',
+grafico3.set(title = 'Velocidades',
        xlabel = 'Género', ylabel = 'Total')
 plt.title("Gráfico de Barras Genero")
 plt.savefig(f'{ruta_aplicacion}/Genero.jpg')
